@@ -18,6 +18,6 @@ MongoClient.connect(url, (err,client) => {
 
     db.collection('users').deleteOne({Name:'Muhammad Nadeem'}).then((result)=> {
         console.log(result);
-    });
+    }); 
     client.close();
 });
